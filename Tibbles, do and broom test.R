@@ -9,7 +9,7 @@ galton <- GaltonFamilies %>%
   sample_n(1) %>%
   ungroup() %>% 
   gather(parent, parentHeight, father:mother) %>%
-  mutate(child = ifelse(gender == "female", "daughter", "son")) %>%
+  mutate(child = ifelse(gender == "female", "daughter", "son")) %>%gtrfrdgr
   unite(pair, c("parent", "child"))
 
 galton
