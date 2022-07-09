@@ -18,6 +18,8 @@ summary(fit) #LSE for Least Squares Estimate
 #lse <- replicate(B, {
  # sample_n(galton_heights, N, replace = TRUE) %>% lm(son ~ father, data = .) %>% .$coef
 #})
+#lse = data.frame(beta_0 =lse[1,], beta_1 = lse[2, ]) #correlation of non-standardsied variabes
+
 
 #B <- 1000
 #N <- 50
@@ -29,7 +31,6 @@ summary(fit) #LSE for Least Squares Estimate
 
 #cor(lse[1,], lse[2,]) 
   
-#lse = data.frame(beta_0 =lse[1,], beta_1 = lse[2, ]) #correlation of non-standardsied variabes
 
 
 
