@@ -1,9 +1,11 @@
 library(Lahman)
 library(tidyverse)
+library(dslabs)
 library("broom")
 library(caret)
 data("Teams")
-
+data("admissions")
+?admissions
 dat <- Teams 
 #dat <- Teams %>% filter(yearID == 1971) %>% group_by(yearID) %>% mutate(BB = BB/G, HR = HR/G, R=R/G)  %>% select(BB, HR, R, yearID)
 sumry_mean <- summarise(dat, mean_BB =mean(BB))
